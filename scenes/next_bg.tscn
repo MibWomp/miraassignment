@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dphc1bh50fdrp"]
+
+[ext_resource type="Texture2D" uid="uid://dcq8wu4d8i0bi" path="res://assets/next_bg.png" id="1_a4t54"]
+[ext_resource type="PackedScene" uid="uid://b06elr8l36vf4" path="res://scenes/portal.tscn" id="2_2rqr1"]
+
+[node name="NextBg" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 325)
+scale = Vector2(1.153, 1.296)
+texture = ExtResource("1_a4t54")
+
+[node name="Portal" parent="." instance=ExtResource("2_2rqr1")]
+position = Vector2(310, 526)

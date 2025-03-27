@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bip5c5c6td1mq"]
+
+[ext_resource type="Texture2D" uid="uid://3xfagb31rrys" path="res://assets/maple_bg.webp" id="1_8ev32"]
+[ext_resource type="PackedScene" uid="uid://b06elr8l36vf4" path="res://scenes/portal.tscn" id="2_6358s"]
+
+[sub_resource type="GDScript" id="GDScript_hd8cf"]
+script/source = "extends Node2D
+"
+
+[node name="MapleTree" type="Node2D"]
+script = SubResource("GDScript_hd8cf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.75, 321.75)
+scale = Vector2(0.60026, 0.609722)
+texture = ExtResource("1_8ev32")
+
+[node name="Portal" parent="." instance=ExtResource("2_6358s")]
